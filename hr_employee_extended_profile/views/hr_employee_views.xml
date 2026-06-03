@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="view_employee_form_extended_profile" model="ir.ui.view">
+        <field name="name">hr.employee.form.extended.profile</field>
+        <field name="model">hr.employee</field>
+        <field name="inherit_id" ref="hr.hr_employee_view_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//notebook" position="inside">
+                <page string="Ficha Personal Ampliada">
+                    <group string="Datos Personales">
+                        <field name="x_job_position_service"/>
+                        <field name="x_hr_manager"/>
+                        <field name="x_home_phone"/>
+                        <field name="x_dpi"/>
+                        <field name="x_dpi_extended"/>
+                        <field name="x_birth_place"/>
+                        <field name="x_nit"/>
+                        <field name="x_driver_license"/>
+                        <field name="x_igss"/>
+                        <field name="x_municipality"/>
+                        <field name="x_department_residence"/>
+                        <field name="x_housing_type"/>
+                        <field name="x_years_residence"/>
+                        <field name="x_other_income"/>
+                        <field name="x_has_vehicle"/>
+                        <field name="x_vehicle_type"/>
+                        <field name="x_vehicle_brand"/>
+                        <field name="x_has_debts"/>
+                        <field name="x_debt_amount"/>
+                        <field name="x_emergency_phone"/>
+                    </group>
+
+                    <group string="Datos Familiares">
+                        <field name="x_father_name"/>
+                        <field name="x_father_phone"/>
+                        <field name="x_mother_name"/>
+                        <field name="x_mother_phone"/>
+                        <field name="x_spouse_name"/>
+                        <field name="x_spouse_phone"/>
+                        <field name="x_spouse_address"/>
+                        <field name="x_children_count"/>
+                        <field name="x_siblings_count"/>
+                    </group>
+
+                    <group string="Salud">
+                        <field name="x_smokes"/>
+                        <field name="x_drinks"/>
+                        <field name="x_sports"/>
+                        <field name="x_weight"/>
+                        <field name="x_height"/>
+                        <field name="x_disabilities"/>
+                        <field name="x_disease"/>
+                        <field name="x_medication"/>
+                        <field name="x_blood_type"/>
+                    </group>
+
+                    <group string="Trabajo">
+                        <field name="x_reentry_date"/>
+                        <field name="x_job_address"/>
+                        <field name="x_direct_manager"/>
+                        <field name="x_assigned_department"/>
+                        <field name="x_position_change_date"/>
+                        <field name="x_new_position_name"/>
+                        <field name="x_contract_condition"/>
+                        <field name="x_benefits"/>
+                    </group>
+                </page>
+            </xpath>
+        </field>
+    </record>
+</odoo>
